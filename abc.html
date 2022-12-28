@@ -1,0 +1,35 @@
+<!-- Arithmetic Calc -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Js17</title>
+		<style>
+			input{
+				text-align:right;
+			}
+		</style>
+ </head>
+ <body>
+		<div style="text-align:center;">
+			<h3><u>Arithmetic Calc</u></h3>
+			<input type="text" id="firstNum" placeholder="First Number"/> <bR> <bR>
+			<input type="text" id="secNum" placeholder="Second Number" /> <br> <br>
+			<input type="text" id="result" readonly/> <br> <br>
+			<button onclick="result.value=parseFloat(firstNum.value)+parseFloat(secNum.value)"> + </button> &nbsp; 
+			<button onclick="result.value=firstNum.value-secNum.value"> - </button> &nbsp; 
+			<button onclick="result.value=firstNum.value*secNum.value"> * </button> &nbsp; 
+			<button onclick="result.value=firstNum.value/secNum.value"> / </button> &nbsp; 
+			<button onclick="result.value=firstNum.value%secNum.value"> % </button> &nbsp; 
+			<button onclick="result.value=firstNum.value**secNum.value"> ^ </button> 
+			<br> <br>
+			<!-- 3rd textbox alternative 
+				<output id="result" ></output>	-->
+<!--
+Note:	
+	while  performing these -, *, /, %, ** operations, JS  parsing data automatically.
+	otherthan these operator we need manual parsing
+-->
+	</div>
+ </body>
+</html>
